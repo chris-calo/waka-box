@@ -1,5 +1,9 @@
 name: Update gist with WakaTime stats
 on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Run manually"
   schedule:
     - cron: "0 0 * * *"
 jobs:
